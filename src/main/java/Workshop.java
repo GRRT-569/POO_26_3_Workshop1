@@ -28,7 +28,7 @@ public class Workshop {
         // Ejemplo: Si numero = 2 y limite = 5, el resultado debería ser [2, 4, 6, 8, 10].
 int[] tabla = new int[limite];
 for(int i=1; i <=limite; i++){
-tabla[i-1] = numero*i
+tabla[i-1] = numero*i;
 }
         return tabla;
 
@@ -39,7 +39,7 @@ tabla[i-1] = numero*i
         // TODO: Implementar el método para calcular el factorial de un número entero.
         // Ejemplo: Si n = 5, el resultado debería ser 120.
         // Lanzar IllegalArgumentException si n es negativo.
-int respfactor = 1
+int respfactor = 1;
 if(n<0){
 throw new IllegalArgumentException("n no puede ser negativo";
 }
@@ -57,7 +57,7 @@ return respfactor;
         // Ejemplo: Si numero = 7, el resultado debería ser true.
 if(numero<2)
 return false;
-for(int i = 2;i*i<= numero; 1++){
+for(int i = 2;i*i<= numero; i++){
 if(numero%i==0)
 return false;
 }
