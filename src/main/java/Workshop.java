@@ -39,7 +39,16 @@ tabla[i-1] = numero*i
         // TODO: Implementar el método para calcular el factorial de un número entero.
         // Ejemplo: Si n = 5, el resultado debería ser 120.
         // Lanzar IllegalArgumentException si n es negativo.
-        return 0;
+int respfactor = 1
+if(n<0){
+throw new IllegalArgumentException("n no puede ser negativo";
+}
+else{
+for(int i=2; i<= n;i++){
+respfactor *= i;
+}}
+return respfactor;
+
     }
 
     // Método que verifica si un número es primo
