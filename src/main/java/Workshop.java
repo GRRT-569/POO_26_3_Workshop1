@@ -41,7 +41,7 @@ tabla[i-1] = numero*i;
         // Lanzar IllegalArgumentException si n es negativo.
 int respfactor = 1;
 if(n<0){
-throw new IllegalArgumentException("n no puede ser negativo";
+throw new IllegalArgumentException("n no puede ser negativo");
 }
 else{
 for(int i=2; i<= n;i++){
