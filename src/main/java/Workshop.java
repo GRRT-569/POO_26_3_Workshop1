@@ -69,7 +69,19 @@ return false;
         // TODO: Implementar el método para generar la serie de Fibonacci hasta el número n.
         // Ejemplo: Si n = 5, el resultado debería ser [0, 1, 1, 2, 3].
         // Lanzar IllegalArgumentException si n es negativo.
-        return new int[0];
+if(n<0){
+throw new IllegalArgumentException("n no puede ser negativo");
+}
+int [] fibonacci = new int[n];
+int a = 0, b =1;
+for(int i = 0; i<n; i++){
+fibonacci[i] = a;
+int sig= a+b;
+a=b;
+b=sig;
+}
+
+        return fibonacci;
     }
 
     // Método que suma todos los elementos de un arreglo
