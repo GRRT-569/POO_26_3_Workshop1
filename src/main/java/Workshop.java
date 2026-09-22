@@ -89,7 +89,7 @@ b=sig;
         // TODO: Implementar el método para sumar todos los elementos de un arreglo.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser 15.
 int suma=0;
-for(int i = 0; i<arreglo.lenght; i++){
+for(int i = 0; i<arreglo.length; i++){
 suma += arreglo[i];
 }
         return suma;
