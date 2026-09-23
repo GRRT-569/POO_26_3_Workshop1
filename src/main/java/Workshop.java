@@ -275,21 +275,21 @@ return palabras.length;
     public String convertirAMinusculas(String cadena) {
         // TODO: Implementar el método para convertir una cadena a minúsculas.
         // Ejemplo: Si cadena = "HELLO", el resultado debería ser "hello".
-        return caden.toLowerCase();
+        return cadena.toLowerCase();
     }
 
     // Método que reemplaza una subcadena en una cadena por otra subcadena
     public String reemplazarSubcadena(String cadena, String antiguaSubcadena, String nuevaSubcadena) {
         // TODO: Implementar el método para reemplazar una subcadena en una cadena por otra subcadena.
         // Ejemplo: Si cadena = "Hello Java", antiguaSubcadena = "Java", y nuevaSubcadena = "world", el resultado debería ser "Hello world".
-        return "";
+        return cadena.replace(antiguaSubcadena, nuevaSubcadena);
     }
 
     // Método que busca una subcadena en una cadena y retorna su índice
     public int buscarSubcadena(String cadena, String subcadena) {
         // TODO: Implementar el método para buscar una subcadena en una cadena y retornar su índice.
         // Ejemplo: Si cadena = "Hello world" y subcadena = "world", el resultado debería ser 6.
-        return -1;
+        return cadena.indexOf(subcadena);
     }
 
     // Método que valida un correo electrónico
