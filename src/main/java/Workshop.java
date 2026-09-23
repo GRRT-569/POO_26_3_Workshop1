@@ -214,9 +214,19 @@ return combinado;
     public int[] rotarArreglo(int[] arreglo, int posiciones) {
         // TODO: Implementar el método para rotar un arreglo n posiciones.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5] y posiciones = 2, el resultado debería ser [3, 4, 5, 1, 2].
-        return new int[0];
-    }
-
+int n = arreglo.length;
+int[] rotado = new int[n];
+int indice = 0;
+for (int i = posiciones; i < n; i++) {
+rotado[indice] = arreglo[i];
+indice++;
+}
+for (int i = 0; i < posiciones; i++) {
+rotado[indice] = arreglo[i];
+indice++;
+}
+return rotado;
+}
     // Método que cuenta los caracteres en una cadena
     public int contarCaracteres(String cadena) {
         // TODO: Implementar el método para contar el número de caracteres en una cadena.
