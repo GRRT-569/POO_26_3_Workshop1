@@ -315,6 +315,7 @@ return false;
     public double promedioLista(List<Integer> lista) {
         // TODO: Implementar el método para calcular el promedio de una lista de números.
         // Ejemplo: Si lista = [1, 2, 3, 4, 5], el resultado debería ser 3.0.    int suma = 0;
+int suma=0;
 for (int i = 0; i < lista.size(); i++) {
 suma += lista.get(i);
 }
