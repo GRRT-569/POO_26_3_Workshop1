@@ -130,8 +130,6 @@ if (arreglo[i] < menor) {
 menor = arreglo[i];
 }
 }
-
-    return menor;
         return menor;
     }
 
