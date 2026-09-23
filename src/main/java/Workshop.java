@@ -260,11 +260,7 @@ return true;
     public int contarPalabras(String cadena) {
         // TODO: Implementar el método para contar el número de palabras en una cadena.
         // Ejemplo: Si cadena = "Este es un test", el resultado debería ser 4.
-String limpia = cadena.trim();
-if (limpia.isEmpty()) {
-return 0;
-}
-String[] palabras = limpia.split("\\s+");
+String[] palabras = cadena.trim().split(" ");
 return palabras.length;
     }
 
@@ -272,7 +268,7 @@ return palabras.length;
     public String convertirAMayusculas(String cadena) {
         // TODO: Implementar el método para convertir una cadena a mayúsculas.
         // Ejemplo: Si cadena = "hello", el resultado debería ser "HELLO".
-        return "";
+    return cadena.toUpperCase();
     }
 
     // Método que convierte una cadena a minúsculas
