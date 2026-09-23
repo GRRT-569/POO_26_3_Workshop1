@@ -296,7 +296,18 @@ return palabras.length;
     public boolean validarCorreoElectronico(String correo) {
         // TODO: Implementar el método para validar un correo electrónico.
         // Ejemplo: Si correo = "test@example.com", el resultado debería ser true.
-        return false;
+int posArroba = correo.indexOf('@');
+int posPunto = correo.lastIndexOf('.');
+if (posArroba <= 0) {
+return false;
+}
+if (posPunto <= posArroba + 1) {
+return false;
+}
+if (posPunto == correo.length() - 1) {
+return false;
+}
+    return true;
     }
 
     // Método que calcula el promedio de una lista de números
