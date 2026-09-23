@@ -215,16 +215,11 @@ return combinado;
         // TODO: Implementar el método para rotar un arreglo n posiciones.
         // Ejemplo: Si arreglo = [1, 2, 3, 4, 5] y posiciones = 2, el resultado debería ser [3, 4, 5, 1, 2].
 int n = arreglo.length;
-posiciones = posiciones % n;
 int[] rotado = new int[n];
-int indice = 0;
-for (int i = posiciones; i < n; i++) {
-rotado[indice] = arreglo[i];
-indice++;
-}
-for (int i = 0; i < posiciones; i++) {
-rotado[indice] = arreglo[i];
-indice++;
+int desplazamiento = ((posiciones % n) + n) % n;
+for (int i = 0; i < n; i++) {
+int nuevaPosicion = (i + desplazamiento) % n;
+rotado[nuevaPosicion] = arreglo[i];
 }
 return rotado;
 }
